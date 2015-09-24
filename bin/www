@@ -8,6 +8,9 @@ var app = require('../app');
 var debug = require('debug')('hitlist:server');
 var http = require('http');
 
+var Mongoose = require('mongoose');
+Mongoose.connect('mongodb://localhost/hitlistdb');
+
 /**
  * Get port from environment and store in Express.
  */
